@@ -1,0 +1,23 @@
+#left-ear,
+#right-ear {
+  transform: translateY(0px);
+  transition: all .5s linear;
+}
+
+#bear:hover #left-ear, #bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
+#right-eye, #left-eye {
+  transform-origin: bottom;
+  animation: transition .3s alternate linear infinite;
+}
+
+@keyframes transition {
+
+  0% { transform: translateX(7px); }
+
+  100% { transform: translateX(-7px); }
+}
+
+}
